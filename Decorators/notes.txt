@@ -1,0 +1,12 @@
+Decorators are functions 
+Decorators wrap other funcions and enhances their behaviour
+Decorators are examples of higher order functions
+
+
+
+
+
+
+
+
+

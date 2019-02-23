@@ -1,0 +1,82 @@
+{
+    "version": "0",
+    "id": "e2e6b270-2cd2-60fa-e3bc-ba7f6f913423",
+    "detail-type": "ECS Task State Change",
+    "source": "aws.ecs",
+    "account": "577595225843",
+    "time": "2018-12-13T06:01:59Z",
+    "region": "us-east-1",
+    "resources": [
+      "arn:aws:ecs:us-east-1:577595225843:task/6fcf8e5f-88d6-40f7-8637-b3a7627bfe33"
+    ],
+    "detail": {
+      "clusterArn": "arn:aws:ecs:us-east-1:577595225843:cluster/reasac-ava-dev",
+      "containers": [
+        {
+          "containerArn": "arn:aws:ecs:us-east-1:577595225843:container/ae484260-f8f2-4563-9a03-95486611f37a",
+          "exitCode": 1,
+          "lastStatus": "STOPPED",
+          "name": "reasac-ava-int-svcs-consumers-accounting-events",
+          "taskArn": "arn:aws:ecs:us-east-1:577595225843:task/6fcf8e5f-88d6-40f7-8637-b3a7627bfe33",
+          "networkInterfaces": [
+            {
+              "attachmentId": "318b9175-7bf2-4f6b-9dc3-cfcc0216f724",
+              "privateIpv4Address": "10.181.135.161"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2018-12-13T01:06:05.469Z",
+      "launchType": "FARGATE",
+      "cpu": "512",
+      "memory": "1024",
+      "desiredStatus": "STOPPED",
+      "group": "service:reasac-ava-int-svcs-consumers-accounting-events",
+      "lastStatus": "STOPPED",
+      "overrides": {
+        "containerOverrides": [
+          {
+            "name": "reasac-ava-int-svcs-consumers-accounting-events"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "id": "318b9175-7bf2-4f6b-9dc3-cfcc0216f724",
+          "type": "eni",
+          "status": "DELETED",
+          "details": [
+            {
+              "name": "subnetId",
+              "value": "subnet-052700eded8c919ab"
+            },
+            {
+              "name": "networkInterfaceId",
+              "value": "eni-0f1d74ebd40c314b1"
+            },
+            {
+              "name": "macAddress",
+              "value": "0e:31:2d:06:9d:7e"
+            },
+            {
+              "name": "privateIPv4Address",
+              "value": "10.181.135.161"
+            }
+          ]
+        }
+      ],
+      "connectivity": "DISCONNECTED",
+      "pullStartedAt": "2018-12-13T01:06:19.82Z",
+      "startedAt": "2018-12-13T01:08:16.82Z",
+      "startedBy": "ecs-svc/9223370492651931987",
+      "stoppingAt": "2018-12-13T06:01:34.88Z",
+      "stoppedAt": "2018-12-13T06:01:59.227Z",
+      "pullStoppedAt": "2018-12-13T01:08:15.82Z",
+      "executionStoppedAt": "2018-12-13T06:01:34Z",
+      "stoppedReason": "Essential container in task exited",
+      "updatedAt": "2018-12-13T06:01:59.227Z",
+      "taskArn": "arn:aws:ecs:us-east-1:577595225843:task/6fcf8e5f-88d6-40f7-8637-b3a7627bfe33",
+      "taskDefinitionArn": "arn:aws:ecs:us-east-1:577595225843:task-definition/reasac-ava-dev-ECSStack-1F805Y05W9V8N-REASACAAVAIntSvcsConsumersAccountingEventsTaskDefinition-MD1NSMPN7XPN:1",
+      "version": 5
+    }
+  }
